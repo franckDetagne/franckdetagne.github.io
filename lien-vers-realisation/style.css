@@ -1,0 +1,458 @@
+/*pour la page images-industrielle*/
+body{
+	margin: 0;
+	padding: 0;
+	background:rgba(255,255,255,0.75);
+	font-family: verdana,sans-serif;
+
+}
+h1,h2{
+	font-size: 2em;
+	text-align: center;
+}
+a{
+	text-decoration: none;
+	color:blue;
+
+}
+a:active{
+	color:yellow;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+/*header*/
+.logo{
+	height:40px;
+
+}
+nav#desktop-nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 2rem;
+	height: 17vh;
+	margin-bottom: 2rem;
+}
+ nav#desktop-nav ul li{
+	list-style: none;
+	padding-left: 2rem;
+}
+ nav#desktop-nav ul a{
+	text-decoration: none;
+	color:black;
+	transition: all .4s ease;
+}
+#desktop-nav ul a:hover{
+	text-decoration: underline;
+	color:gray;
+	text-underline-offset:0.45rem ;
+	text-decoration-color: gray;
+}
+nav#desktop-nav ul{
+	display: flex;
+
+}
+/*header end*/
+/*hamburger-nav*/
+#hamburger-nav{
+	display: none;
+}
+nav#hamburger-nav{
+	justify-content: space-around;
+	height: 17vh;
+	position: static;
+	align-items: center;
+}
+#hamburger-nav .hamburger-menu{
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+}
+#hamburger-nav .hamburger-logo{
+	height: 24px;
+	width: 30px;
+	position: relative;
+	display: flex;
+	transition: all .9s ease;
+	justify-content: space-between;
+	flex-direction: column;
+}
+#hamburger-nav .hamburger-logo span{
+	height: 2px;
+	background: black;
+	width: 100%;
+}
+#hamburger-nav .hamburger-links{
+	position: absolute;
+	top: 100%;
+	right: 0;
+	background-color: white;
+	max-height: 0;
+	overflow: hidden;
+	transition: all .9s ease;
+	max-width: fit-content;
+}
+#hamburger-nav .hamburger-links a{
+	text-decoration: none;
+	display: block;
+	font-family:sans-serif;
+	background-color: white;
+	text-align: initial;
+	color:black;
+	padding: 1.5rem;
+	font-size: 1.5rem;
+}
+.logo{
+	height: 75px;
+}
+#hamburger-nav .hamburger-links li{
+	list-style: none;
+}
+#hamburger-nav .hamburger-links.toggle{
+	overflow: visible;
+	max-height: auto;
+}
+.hamburger-logo.toggle span:first-child{
+	transform: rotate(45deg) translate(10px,5px);
+}
+.hamburger-logo.toggle span:nth-child(2){
+	opacity: 0;
+}
+.hamburger-logo.toggle span:last-child{
+	transform: rotate(-45deg) translate(10px,-5px);
+}
+.hamburger-menu-bloc span:first-child{
+	transform: none;
+}
+.hamburger-menu-bloc span:nth-child(2){
+	opacity: 1;
+}
+.hamburger-menu-bloc span:first-child{
+	transform: none;
+}
+.logo{
+	font-size:2rem;
+	cursor: pointer;
+}
+@media screen and (max-width:1000px) {
+nav#desktop-nav{
+		display:none;
+	}
+	#hamburger-nav{
+		display: flex;
+	}
+	.p11{
+		font-size: 2rem;
+	}
+}
+/*hamburger-nav*/
+/*ici on va faire la mise en page de notre banniére*/
+.banner{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 3em;
+	text-transform: uppercase;
+	height:250px;
+		box-shadow: 2px -2px 3px rgba(0, 0, 0, 0.25),-2px 2px 2px rgba(255, 255, 255, 0.25);
+	/*margin: 50px 25px;*/
+	background-color: gray;
+}
+/*ici on va faie la en forme de nos images cliquable*/
+.introduction-images{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: 1fr;
+	gap:5px;
+	margin: 50px;
+}
+.block{
+	height: 300px;
+	width: 300px;
+	transition: all .3s ease;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+.block:hover{
+	height: 320px;
+	width: 320px;
+}
+.block-1{
+	background-image: url("images/images-mini/industrielle1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.block-2{
+	background-image: url("images/images-mini/maison-1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.block-3{
+	background-image: url("images/images-mini/angle-2-mini.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.grid-images-industrielle,.grid-images-maison{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: repeat(3,1fr);
+	grid-gap: 5px;
+	margin: auto;
+}
+a>div{
+	height: 200px;
+	width: 200px;
+	border-radius: 10px;
+}
+.images:hover,.image:hover,.block:hover{
+	opacity: 0.7;
+	border-radius: 10px;
+	box-shadow: -2px -2px 5px black;
+
+}
+.content{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+}
+
+.images-industrielle:hover{
+	opacity: 0.7;
+}
+
+.images-grid-1{
+	background-image: url("images/images-mini/industrielle1.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.images-grid-2{
+	background-image: url("images/images-mini/industrielle2.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.images-grid-3{
+	background-image: url("images/images-mini/industrielle3.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.images-grid-4{
+	background-image: url("images/images-mini/industrielle4.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.images-grid-5{
+	background-image: url("images/images-mini/industrielle5.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.images-grid-6{
+	background-image: url("images/images-mini/industrielle6.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.images-grid-7{
+	background-image: url("images/images-mini/industrielle7.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.images-grid-8{
+	background-image: url("images/images-mini/industrielle8.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.images-grid-9{
+	background-image: url("images/images-mini/industrielle9.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+/*footer*/
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+footer{
+	font-family: popins,sans-serif;
+	display: flex;
+	color: white;
+	flex-wrap: wrap;
+	flex-direction: column;
+	gap: 2rem;
+	padding: 2rem;
+	height: 17vh;
+	background: black;
+	height:fit-content;
+	font-size: 12px;
+}
+footer h3{
+	color:gray;
+	text-transform: uppercase;
+	margin-bottom: 0.5rem;
+}
+.content{
+	margin-bottom: 1.5rem;
+}
+footer .information{
+	display: flex;
+	flex-direction: column;
+}
+footer .footer-information{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+footer   a{
+	text-decoration: none;
+	text-underline-offset: 1.25rem;
+	color:white;
+}
+footer  a:hover{
+	text-decoration-color:gray;
+	color:gray;
+}
+footer li{
+	list-style-type: none;
+}
+footer .about-me p{
+	text-align:initial;
+}
+
+/*footer*/
+
+@media screen and (max-width: 600px){
+	.grid-images-industrielle{
+	display: grid;
+	grid-template-columns: repeat(3,0.5fr);
+	grid-template-rows: repeat(3,0.5fr);
+	grid-gap: 5px;
+	/*margin: auto;*/
+}
+	a>div,.block{
+	height: 100px;
+	width: 100px;
+}
+
+}
+/* une autre media query */
+@media screen and (max-width: 360px){
+	.grid-images-industrielle{
+display: grid;
+grid-template-columns: repeat(3,0.5fr);
+grid-template-rows: repeat(3,0.5fr);
+grid-gap: 5px;
+/*margin: auto;*/
+}
+a>div ,.block{
+height: 80px;
+width: 80px;
+}
+}
+/*nous avons fais nos média querry ici pour l'adaptation*/
+@media screen and (min-width: 601px) and (max-width:915px){
+		.grid-images-industrielle{
+	display: grid;
+	grid-template-columns: repeat(3,0.5fr);
+	grid-template-rows: repeat(3,0.5fr);
+	grid-gap: 5px;
+	/*margin: auto;*/
+}
+	a>div ,.block{
+	height: 150px;
+	width: 150px;
+}
+}
+/*nous allons maintenant faire la mise en forme de la page des maisons*/
+.maison-grid-1{
+	background-image: url("images/images-mini/maison-1.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.maison-grid-2{
+	background-image: url("images/images-mini/maison-2.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.maison-grid-3{
+	background-image: url("images/images-mini/maison-3.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.maison-grid-4{
+	background-image: url("images/images-mini/maison-4.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.maison-grid-5{
+	background-image: url("images/images-mini/maison-5.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.maison-grid-6{
+	background-image: url("images/images-mini/maison-6.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.maison-grid-7{
+	background-image: url("images/images-mini/maison-7.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.maison-grid-8{
+	background-image: url("images/images-mini/maison-8.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.maison-grid-9{
+	background-image: url("images/images-mini/maison-9.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;}
+	/*ici nous allons faire la mise en page pour nos stafs*/
+.image-grid-1{
+	background-image: url("images/images-mini/angle-2-mini.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.image-grid-2{
+	background-image: url("images/images-mini/angle-2-mini.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.image-grid-3{
+	background-image: url("images/images-mini/angle-3-mini.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.image-grid-4{
+	background-image: url("images/images-mini/angle-4-mini.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.image-grid-5{
+	background-image: url("images/images-mini/angle-5-mini.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.image-grid-6{
+	background-image: url("images/images-mini/angle-6-mini.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.image-grid-7{
+	background-image: url("images/images-mini/angle-7-mini.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.image-grid-8{
+	background-image: url("images/images-mini/angle-8-mini.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.image-grid-9{
+	background-image: url("images/images-mini/angle-9-mini.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;}

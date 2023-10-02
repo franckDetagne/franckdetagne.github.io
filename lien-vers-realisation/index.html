@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Realisation-Franck-Detagne</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<!--
+	pour faire des liens avec des images voici comment je me suis pris...
+	1.j'ai utilisé une balise <a href=""></a> dans lequel j'ai donnée comme valeur à l'attribut href le lien vers la page d'image souhaité..par exemple pour aller vers la page d'image d'électricté avec avec le staf j'ai fait <a href="image-staf.html"></a>...
+	2. pour faire apparaitre l'image j'ai inclut une balise <div></div> à l'intérieur de ma balise a comme suit <a href=""><div></div></a>...
+	3. en css maintenant j'ai donnée a la "div" inclut dans la balise "a" une image de fond avec certains paramétre
+	a>div{
+		height:250px;
+		width:250px;
+		background:urel("lien-relatif) no-repeat cover;
+	}
+	4. pour la mise en forme j'ai utilisé css grid: comme suit en ayant englober toute mes balise "a" dans une div une une section approprié
+	exemple: <div class="grid-image">
+		<a href=""></a>//le nombre de "a" nécessaire
+	</div>
+	.grid-image{
+		display:grid;
+		grid-tempate:repeat(3,1fr)/repeat(3,1fr);
+		gap:5px;
+	}
+	5. pour centrer ma grille j'ai du ajouter a la "div.grid-image" <div class="content"></div> à qui
+	j'ai appliqué css flexbox
+	que voici:
+	.content{
+		display:flex;
+		justify-content:center;
+		align-items:center;
+	}
+	//voici donc les grands ensemble comme je m'y suis pris
+ -->
+<body>
+
+		<nav id="desktop-nav">
+			<img class="logo" src="images/logo.png" alt="logo su du site des électriciens">
+			<ul>
+				<li> <a href="../index.html">Acceuil</a> </li>
+				<li><a href="images-industriel.html">Industriel</a></li>
+				<li><a href="images-staf.html">Stafs</a></li>
+				<li><a href="images-maison.html">Maison</a></li>
+			</ul>
+		</nav>
+		<nav id="hamburger-nav"><p class="logo">
+			<img class="logo" src="images/logo.png" alt="logo su du site des électriciens">
+			<div class="hamburger-menu">
+					<div class="hamburger-logo show">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+						<ul class="hamburger-links">
+							<li><a class="show" href="./../index.html">Acceuil</a></li>
+							<li><a class="show" href="images-industriel.html">Industriel</a></li>
+							<li><a class="show" href="images-staf.html">Stafs</a></li>
+							<li><a class="show" href="images-maison.html">Maison</a></li>
+						</ul>
+			</div>
+		</nav>
+	<h1>Electricien Professionel</h1>
+	<section class="banner">
+		<p class="p11">Franck Detagne</p>
+	</section>
+	<h2>Mes realisations</h2>
+	<section class="introduction-images">
+		<a href="images-industriel.html">
+			<div class="block-1 block "></div></a>
+		<a href="images-maison.html">
+			<div class="block block-2"></div></a>
+		<a href="images-staf.html"><div class="block-3 block"></div></a>
+	</section>
+	<footer>
+		<div class="footer-information">
+			<div class="information footer-network-information">
+				<h3>Get in Touch</h3>
+				<a href="mailto:techgroupe18@gmail.com">Franck Detagne</a>
+				<a href="mailto:francheskoleonel@gmail.com">Techgroupe18</a>
+			</div>
+			<div class=" information footer-contact-information">
+				<h3>Connect</h3>
+				<a href="https://www.facebook.com/profile.php?id=100091659424209">Facebook</a>
+				<a href="https://wa.me/237620664828">whatsapp</a>
+
+			</div>
+			<div class="information">
+				<h3>Service</h3>
+				<ul class=" information footer-service-information information ">
+					<li>Electricity</li>
+					<li>Web developement</li>
+					<li>Graphics design</li>
+				</ul>
+			</div>
+		</div>
+		<div class="about-me">
+			<p>Design by Franck Detagne</p>
+			<p>Copyright &#169; 2023 Franck Detagne. All Rights Reserved.</p>
+		</div>
+	</footer>
+	<script src="script.js">
+
+	</script>
+</body>
+</html>

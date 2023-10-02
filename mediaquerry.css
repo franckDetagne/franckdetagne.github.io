@@ -1,0 +1,109 @@
+@media screen and (max-width: 1000px){
+	#desktop-nav{
+		display: none;
+	}
+
+	section{
+		margin:0 5%;
+		display: flex;
+		padding: 2rem;
+		justify-content: center;
+		align-items: center;
+		margin-bottom:2rem;
+	}
+	#about{
+		height: fit-content;
+	}
+	nav{
+		height: 10vh;
+		padding: 2rem;
+	}
+	#hamburger-nav{
+		display: flex;
+		box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5),-2px -2px 5px white;
+	}
+	.section-profile-container{
+		flex-wrap: wrap;
+
+	}
+	.image{
+		height: 15rem;
+		width: 15rem;
+	}
+		.profile__pic-container,
+		.profile-image-about{
+	    width: 12rem;
+	    height: 12rem;
+	}
+	.btn-e,
+	.btn {
+		padding: 1rem;
+		width: 8rem;
+	}
+	.project{
+		padding: 1rem;
+	}
+	/*about section*/
+	#profile{
+		margin-bottom: 6rem;
+	}
+	.section-about{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.section-about,
+	.details,
+	.experience-section{
+		flex-wrap: wrap;
+	}
+
+	.p1{
+		text-align: center;
+		font-size: 0.7rem;
+	}
+
+	#about,#experience,#project,#contact{
+		flex-direction: column;
+
+	}
+	.arrow-icon{
+		display: none;
+	}
+	.title{
+		font-size: 1.5rem;
+	}
+	.details-contact{
+		padding: 0.2rem;
+		gap:0rem;
+		font-size: 0.75rem;
+		width: 20rem;
+	}
+	.desktop-links{
+		display: flex;
+		flex-direction: column;
+	}
+.text__container__p1{
+	text-align: center;
+}
+.text__container__p2{
+	font-size: 1.2rem;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+.profile-title{
+	text-align: center;
+	font-size: 1.5rem;
+}
+#experience{
+	margin:15rem 2rem;
+}
+.about__pic-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  .logo{
+  	font-size: 1.1rem;
+  }
+}
